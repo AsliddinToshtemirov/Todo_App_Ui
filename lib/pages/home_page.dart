@@ -131,39 +131,3 @@ Widget myTask(String title, Color mycolor) {
     ),
   );
 }
-
-Widget myrextfielf() {
-  return Container(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 10,
-      ),
-      child: Row(
-        children: [
-          Expanded(
-              child: Container(
-            child: const TextField(
-              decoration: InputDecoration(
-                  hintText: "Add new todo", border: OutlineInputBorder()),
-            ),
-          )),
-          const SizedBox(
-            width: 10,
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: const Color.fromARGB(255, 0, 0, 0),
-                ),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                child: const Icon(
-                  Icons.add,
-                  size: 30,
-                  color: Colors.white,
-                )),
-          )
-        ],
-      ));
-}
